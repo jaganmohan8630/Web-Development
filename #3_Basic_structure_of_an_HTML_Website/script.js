@@ -1,1 +1,0 @@
-alert("You have entered my website successfully")
