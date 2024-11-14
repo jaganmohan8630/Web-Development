@@ -1,0 +1,18 @@
+th {
+     border: 2px solid black;
+}
+td {
+    border: 2px solid black;
+}
+thead {
+    color: blue;
+}
+tbody {
+    color: rgb(11, 187, 81);
+}
+tfoot {
+    color: rgb(235, 14, 18);
+}
+dl {
+    color:blueviolet;
+}
