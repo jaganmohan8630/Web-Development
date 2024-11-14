@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        .home{
+            list-style: none;
+        }
+        .about{
+            list-style: armenian;
+        }
+        nav ul li{
+            list-style: devanagari;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        span ul li{
+            list-style-type:"😍";
+        }
+        div ul li{
+            list-style: devanagari;
+            background-color: yellow;
+            list-style-position: inside;
+            border: 2px solid black;
+            list-style: disc inside url("jjm.jpg");
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <ul>
+        <li class="home">Home</li>
+        <li class="about">About</li>
+        <li>Contact</li>
+    </ul>
+    <span>
+        <ul>
+            <li>Durga prasad</li>
+            <li>Sujatha</li>
+            <li>Jagan Mohan</li>
+            <li>Gayatri</li>
+        </ul>
+    </span>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+</body>
+</html>
