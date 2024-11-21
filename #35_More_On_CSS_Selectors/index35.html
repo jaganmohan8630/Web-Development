@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box:first-child{
+            background-color: red;
+        }*/
+        .boxes::first-line{
+            background-color: aquamarine;
+        }
+        .box::first-letter{
+            background-color: blue;
+            font-size: 23px;
+        }
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+        .box:nth-last-child(1){
+            color:blueviolet;
+        }
+        .boxes::before{
+            content: "Hello I am good";
+            color: blue;
+        }
+        .boxes::after{
+            content: "Hello I am good";
+            color:red;
+        }
+        ::selection{
+            color: aquamarine;
+            background-color: black;
+        }
+        input::placeholder{
+            color: red;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a Box Lorem ipsum dolor sit amet consectetur, adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error molestias itaque dolorem iusto animi, dolorum cumque, eum veritatis repellendus temporibus qui in? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo exercitationem ad qui voluptatem. Quia earum aliquid nemo animi ut a autem dolore id harum quisquam ducimus temporibus optio recusandae, praesentium, est assumenda? Libero cupiditate inventore voluptatem debitis quia animi earum quasi quis velit laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque unde consequatur minus tempora, aliquid illo eveniet natus? Minus iusto dolorem quisquam voluptatibus esse aliquam. Laboriosam nisi labore asperiores eveniet dicta esse iusto, impedit, voluptatibus ea aut eos deserunt doloremque quisquam aliquid, corrupti repudiandae reprehenderit modi. </div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+    <input type="text" placeholder="Type your name here">
+</body>
+</html>
