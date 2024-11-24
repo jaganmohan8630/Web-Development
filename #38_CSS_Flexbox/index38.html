@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container0{
+            border: 2px solid red;
+            height: 50vh;
+            display: flex;
+            align-items:center;
+        }
+        .container{
+            border: 2px solid red;
+            height: 50vh;
+            display: flex;
+            /*justify-content:center;*/
+            align-items:center;
+            /*flex-direction: row-reverse;*/
+            margin: 2px;
+            flex-wrap: wrap;
+            align-content: center;
+            flex-flow: wrap;
+            row-gap: 35px;
+        }
+        .container2{
+            border: 2px solid red;
+            height: 50vh;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column-reverse;
+            margin: 2px;
+            padding: 9px;
+            flex-wrap: wrap;
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .item2{
+            height: 32px;
+            width: 32px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .item2{
+            /*flex-grow: 1;*/
+            
+        }
+        .meet{
+            /*flex-grow: 3;*/
+           /* flex-shrink: 2;*/
+           align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container0">
+            <div class="item2 meet">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+            <div class="item2">5</div>
+            <div class="item2">6</div>
+        </div>
+    </main>  
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item order-1">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item order-2">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            
+        </main>
+    <main>
+        <div class="container2">
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+            <div class="item2">5</div>
+            <div class="item2">6</div>
+            <div class="item2">7</div> 
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+            <div class="item2">5</div>
+            <div class="item2">6</div>
+            <div class="item2">7</div> 
+        </main>
+    </div>
+</body>
+</html>
