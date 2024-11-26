@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        header{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo{
+            width: 40px;
+            height: 40px;
+            background-color: orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border: 2px solid black;
+            font-weight: 500px;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        :root{
+            --color:rgb(245, 245, 239);
+        }
+        .lan{
+            width: 300px;
+            height: 200px;
+            background-color: var(--color);
+            text-align: center;
+            font-size: 29px;
+            padding: 10px;
+            margin: 13px;
+            border-radius: 19px;
+        }
+        .button{
+            width: 200px;
+            height: 40px;
+            background-color: green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            margin: 40px;
+            cursor: pointer;
+            padding: 2px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        .small{
+            font-size: 15px;
+        }
+        @media  only screen and (max-width:250px){
+           main{
+            grid-template-columns: 1fr;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">UE</div>
+        <div class="content">Download UltraEdit v2024.1 (released 2024-09-30) | Hotfix information </div>
+    </header>
+    <main>
+        <div class="eng lan">English
+            <div class="button" >
+                <a href="ue_english_64.exe">Download 64-bit</a></div>
+                <div class="small">SHA256</div>
+        </div>
+        <div class="deu lan">Deutsch
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+
+        <div class="ita lan">Italiano
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+         </div>
+
+        <div class="esp lan">Español
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>   
+            <div class="small">SHA256</div> 
+        </div>
+
+        <div class="fra lan">français
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div> 
+            <div class="small">SHA256</div>   
+        </div>
+
+        <div class="por lan">Português brasileiro
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+
+        <div class="jap lan">日本
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+
+        <div class="kor lan">한국어
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+
+        <div class="chi lan">中国
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+
+        <div class="tra lan">中國
+            <div class="button"><a href="ue_english_64.exe">Download 64-bit</a></div>
+            <div class="small">SHA256</div>
+        </div>
+    </main>
+</body>
+</html>
