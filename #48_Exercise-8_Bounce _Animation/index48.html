@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 80vh;
+            position: relative;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: jjm 3s ease-in-out infinite alternate,jd 3s ease-in-out infinite alternate;
+        }
+        @keyframes jjm {
+            from{
+                
+            }
+            to{
+                transform: translateX(600px);
+            }
+        }
+        @keyframes jd{
+            from{
+                
+            }
+            to{
+                transform: translateY(-600px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
