@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and Object cover</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 600px;
+            background-color: rgb(159, 225, 225);
+            border: 2px solid black;
+            background-image: url(nature.jpg);
+            background-position: right top;
+            /*background-clip: border-box padding-box;*/
+            background-repeat: no-repeat;
+            /*the above one is used when the image is too short it will repeat and cover the empty space
+            ,to stop the repeating we use the above one*/
+
+            color: white;
+            font-size: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 400px;
+            height: 300px;
+            /*object-fit: contain;
+            object-fit: cover;
+            object-position: top right;
+            object-fit: scale-down;
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="nature.jpg" > --> Jagan Mohan Jangam
+    </div>
+</body>
+</html> 

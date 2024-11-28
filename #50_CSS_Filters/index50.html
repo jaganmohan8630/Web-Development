@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*img{
+            filter: blur(20px);
+        }*/
+        .img{
+            filter: blur(3px);
+        }
+        .img1{
+            filter: brightness(155%);
+        }
+        
+        .img2{
+            filter: grayscale();
+        }
+        
+        .img2a{
+            filter: sepia();
+            /*/filter: contrast();*/
+        }
+
+        .img3{
+            filter: invert();
+        }
+
+        body{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .me{
+            filter: sepia();
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="nature.jpg" width="350" class="img"></div>
+        </div>
+        <div class="image">
+            <img src="nature.jpg" width="350" class="img1"></div>
+        </div>
+
+        <div class="image">
+            <img src="nature.jpg" width="350" class="img2"></div>
+        </div>
+
+        <div class="image">
+            <img src="nature.jpg" width="350" class="img2a"></div>
+        </div>
+
+        <div class="image">
+            <img src="nature.jpg" width="350" class="img3"></div>
+    </div>
+    <div class="me">
+        <img src="me.jpg" width="350">
+    </div>
+
+</body>
+</html>
