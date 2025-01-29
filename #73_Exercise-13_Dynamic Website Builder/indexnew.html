@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            background-color: black;
+            border-radius: 9px;
+            height: 140px;
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin: 350px;
+        }
+        .title{
+            font-size: 19px;
+            color: white;
+        }
+        .image img{
+            height: 140px;
+            border-radius: 10px;
+        }
+        .right{
+            margin: 0px;
+            padding-top: 8px;
+        }
+        .box{
+            color: rgba(255, 255, 255, 0.4);
+            display: flex; 
+            gap: 5PX;
+            font-size: 14PX;
+            padding-top: 10px;
+        }
+
+
+        .image{
+            position: relative;
+            display: inline-block;
+        }
+        .duration{
+            position: absolute;  
+            bottom: 9px;         
+            right: 59px;          
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;        
+            font-size: 14px;    
+            font-weight: bold;  
+            padding: 3px 6px;   
+            border-radius: 5px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+        <img src="image.png" class="iimmaa">
+        <span class="duration">31:30</span>
+    </div>
+
+        <div class="right">
+            <div class="title">jaganmohan</div>
+            <div class="box">
+                <span class="channel">Sigmaweb</span>
+                <span class="views">544654</span>
+                <span class="monthsold">78</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
