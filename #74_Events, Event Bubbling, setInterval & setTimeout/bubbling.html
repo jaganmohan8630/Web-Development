@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child, .child1{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 34px;
+            margin: 34px;
+            cursor: pointer;
+        }
+        .container, .container1{
+            background-color: yellow;
+            padding: 34px;
+            margin: 34px;
+        }
+        .childcontainer, .childcontainer1{
+            margin: 50px;;
+            height: 300px;
+            background-color: yellowgreen;
+            padding: 34px;
+            margin: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">I am a Child</div>
+        </div>
+    </div>
+    <!-- <div class="container1">
+        <div class="childcontainer1">
+            <div class="child1">I am a Child</div>
+        </div>
+    </div> -->
+
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Child Div Clicked");
+        });
+        document.querySelector(".childcontainer").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Childcontainer Div Clicked");
+        });
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("Container Div Clicked");
+        });
+        /*document.querySelector(".child1").addEventListener("click",(e)=>{
+            alert("Child1 Div Clicked");
+        });
+        document.querySelector(".childcontainer1").addEventListener("click",(e)=>{
+            alert("Childcontainer1 Div Clicked");
+        });
+        document.querySelector(".container1").addEventListener("click",(e)=>{
+            alert("Container1 Div Clicked");
+        });*/
+
+        function getrandomcolor(){
+            let c1=Math.floor(Math.random()*255);
+            let c2=Math.floor(Math.random()*255);
+            let c3=Math.floor(Math.random()*255);
+            return `rgb(${c1},${c2},${c3})`;
+        }
+
+
+        /*let a = setInterval(()=>{
+            document.querySelector(".child").style.background = getrandomcolor(); 
+        },3000);//time in milliseconds
+
+        console.log(a);
+        to stop the interval use clearInterval(a);
+        a is the value returned by setInterval*/
+        
+        
+        let a = setTimeout(()=>{
+            document.querySelector(".child").style.background = getrandomcolor(); 
+        },3000);//time in milliseconds
+        
+        /*to stop the interval use clearInterval(a);
+        a is the value returned by setInterval*/
+        console.log(a);
+    </script>
+</body>
+</html>
